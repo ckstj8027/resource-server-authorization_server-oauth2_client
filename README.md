@@ -84,3 +84,13 @@ Request URI: GET http://127.0.0.1:9000/oauth2/jwks
 
 → Redirect: http://127.0.0.1:8081/
 
+
+![asdfsadfasd](https://github.com/user-attachments/assets/7c3038c4-797f-4af0-a275-036c94c5c9a1)
+
+
+
+
+
+
+
+
