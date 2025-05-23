@@ -1,6 +1,5 @@
 
-
-
+oauth2 인증 흐름
 ![asdjkljasjdklf](https://github.com/user-attachments/assets/954a9275-765d-4ee7-a6b2-eae969b09832)
 
 
@@ -84,6 +83,8 @@ Request URI: GET http://127.0.0.1:9000/oauth2/jwks
 
 → Redirect: http://127.0.0.1:8081/
 
+
+인증 후  클라이언트와 리소스 서버 간의 요청 흐름
 
 ![asdfsadfasd](https://github.com/user-attachments/assets/7c3038c4-797f-4af0-a275-036c94c5c9a1)
 
