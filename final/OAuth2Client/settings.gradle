@@ -1,0 +1,4 @@
+rootProject.name = 'OAuth2Client'
+
+include ':OAuth2Client', ':SharedObject'  // 정확히 대소문자에 맞춰서 프로젝트 이름을 지정합니다.
+project(':SharedObject').projectDir = new File(settingsDir, '../SharedObject')  // 상위 디렉토리로 설정
