@@ -1,3 +1,10 @@
+
+
+
+![asdjkljasjdklf](https://github.com/user-attachments/assets/954a9275-765d-4ee7-a6b2-eae969b09832)
+
+
+
 1. [클라이언트] 사용자가 로그인 버튼 클릭
 
 Request URI: http://127.0.0.1:8081/oauth2/authorization/springoauth2
