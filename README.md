@@ -1,6 +1,6 @@
 1. [클라이언트] 사용자가 로그인 버튼 클릭
-─────────────────────────────────────────────
 
+─────────────────────────────────────────────
 Request URI: http://127.0.0.1:8081/oauth2/authorization/springoauth2
 → Filter: OAuth2AuthorizationRequestRedirectFilter
 → 역할: 인가 요청 URI 생성 후 인가서버로 리다이렉트
@@ -8,9 +8,9 @@ Request URI: http://127.0.0.1:8081/oauth2/authorization/springoauth2
 
 ─────────────────────────────────────────────
 
-3. [인가 서버] 인가 요청 수신
-─────────────────────────────────────────────
+2. [인가 서버] 인가 요청 수신
 
+─────────────────────────────────────────────
 Request URI: http://127.0.0.1:9000/oauth2/authorize
 → Filter: OAuth2AuthorizationEndpointFilter
 → Provider: OAuth2AuthorizationCodeRequestAuthenticationProvider
@@ -19,7 +19,8 @@ Request URI: http://127.0.0.1:9000/oauth2/authorize
 
 ─────────────────────────────────────────────
 
-5. [클라이언트] 인가 코드 수신
+3. [클라이언트] 인가 코드 수신
+   
 ─────────────────────────────────────────────
 
 Request URI: http://127.0.0.1:8081/login/oauth2/code/springoauth2?code=abc123
@@ -30,7 +31,8 @@ Request URI: http://127.0.0.1:8081/login/oauth2/code/springoauth2?code=abc123
 
 ─────────────────────────────────────────────
 
-7. [클라이언트 → 인가 서버] 토큰 요청
+4. [클라이언트 → 인가 서버] 토큰 요청
+   
 ─────────────────────────────────────────────
 
 Request URI: POST http://127.0.0.1:9000/oauth2/token
@@ -41,7 +43,8 @@ Request URI: POST http://127.0.0.1:9000/oauth2/token
 
 ─────────────────────────────────────────────
 
-9. [클라이언트 → 인가 서버] 공개키 요청 (OIDC 전용)
+5. [클라이언트 → 인가 서버] 공개키 요청 (OIDC 전용)
+    
 ─────────────────────────────────────────────
 
 Request URI: GET http://127.0.0.1:9000/oauth2/jwks
@@ -53,7 +56,8 @@ Request URI: GET http://127.0.0.1:9000/oauth2/jwks
 
 ─────────────────────────────────────────────
 
-10. [클라이언트] 인증 완료 처리
+6. [클라이언트] 인증 완료 처리
+    
 ─────────────────────────────────────────────
 
 → Filter: OAuth2LoginAuthenticationFilter
